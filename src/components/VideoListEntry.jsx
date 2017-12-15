@@ -1,5 +1,5 @@
 var VideoListEntry = (props) => (
-  <div onClick={props.clickEvent} className="video-list-entry media">
+  <div onClick={props.clickEvent.bind(null, props)} className="video-list-entry media">
     <div className="media-left media-middle">
       <img className="media-object" src={props.videoComponent.snippet.thumbnails.default.url} alt="" />
     </div>
@@ -23,3 +23,4 @@ window.VideoListEntry = VideoListEntry;
   // onVideoClick() {
   //   console.log(props.videoComponent);
   // }
+  
