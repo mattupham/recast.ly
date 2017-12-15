@@ -7,7 +7,7 @@ var searchYouTube = (options, callback) => {
       'q': options.query,
       'part': 'snippet',
       'maxResults': 5,
-      'key': YOUTUBE_API_KEY,
+      'key': window.YOUTUBE_API_KEY,
       'type': ''
     },
     success: function (data) {
